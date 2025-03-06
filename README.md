@@ -1,6 +1,6 @@
 ## Personalización de la terminal de ArchLinux
 
-Este es el repositorio con instrucciones del video de YouTube: [API REST con Laravel 11 y JWT: Auth, Roles y Railway](https://youtu.be/xPR0p2DY9JM?si=nM0RvIQ8tsIxY18T) 
+Este es el repositorio con instrucciones del video de YouTube: [🔧 Personaliza tu Terminal en Arch Linux como un PRO | Neofetch + Zsh + Oh My Zsh + Kitty 🎨](PENDIENTE) 
 
 ## Apóyanos
 
@@ -77,8 +77,10 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlightin
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 ```
+### Guardas los cambios presionando ctrl + o y luego ctrl + x para salir 
+
 ---
-## Guardas los cambios 
+## Guardas los cambios globales
 ```
 source ~/.zshrc
 ```
@@ -101,7 +103,7 @@ sudo pacman -S imagemagick
 ```
 ---
 
-## Editamos el archivo y agregamos la ruta de nuestra imagen y le podemos cambiar el tamano
+## Editamos el archivo de configuración de neofetch
 ```
 nano ~/.config/neofetch/config.conf
 ```
@@ -117,9 +119,7 @@ nano ~/.config/neofetch/config.conf
 
 `image_sizee="300px"`
 
-### Guardas los cambios presionando ctrl + o
-
-`image_sizee="300px"`
+### Guardas los cambios presionando ctrl + o y luego ctrl + x para salir 
 
 ---
 
@@ -138,8 +138,11 @@ clear() {
 alias neofetch='neofetch'
 
 ```
+### Guardas los cambios presionando ctrl + o y luego ctrl + x para salir 
 ---
-## Guardas los cambios 
+
+## Guardas los cambios globales
+
 ```
 source ~/.zshrc
 ```
