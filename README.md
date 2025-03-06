@@ -24,9 +24,30 @@ sudo pacman -Syu
 ```
 ---
 
-
-
+## Instalar el shell Zsh
+```
+sudo pacman -S zsh
+```
 ---
+
+## Cambiar el shell zsh por predeterminado
+```
+chsh -s $(which zsh)
+```
+---
+
+## Instalar git en ArchLinux solo en caso de que no lo tengas instalado
+```
+sudo pacman -S git
+```
+---
+
+## Instalar el framework Oh My Zsh para poder personalizar el shell
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+---
+
 ## ZSH PLUGINS (SOLO para Oh-My-ZSH)
 
 ```
