@@ -30,7 +30,7 @@ sudo pacman -S zsh
 ```
 ---
 
-## Cambiar el shell zsh por predeterminado
+## Poner zsh como shell predeterminado
 ```
 chsh -s $(which zsh)
 ```
@@ -48,7 +48,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 ---
 
-## ZSH PLUGINS (SOLO para Oh-My-ZSH)
+## Zsh plugins
 
 ```
 cd ~
@@ -64,15 +64,84 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete
 ```
 ---
-`nano ~/.zshrc`
+## Abre el archivo de configuración de zsh
+
+```
+nano ~/.zshrc
+```
+`Pega lo siguiente`
 
 ```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
-source "$ZSH/oh-my-zsh.sh
 ```
+---
+## Guardas los cambios 
+```
+source ~/.zshrc
+```
+---
+## DATE UN BREAK DE UN MINUTO Y ENSEGUIDA CONTINUAMOS CON LA INSTALACIÓN DE KITTY
 
+## Instalar neofetch
+```
+sudo pacman -S neofetch
+```
+---
+## Instalar kitty
+```
+sudo pacman -S kitty
+```
+---
+## Instalar este paquete para que nos cargue las imagenes
+```
+sudo pacman -S imagemagick
+```
+---
 
+## Editamos el archivo y agregamos la ruta de nuestra imagen y le podemos cambiar el tamano
+```
+nano ~/.config/neofetch/config.conf
+```
+### Sustityues ascii por kitty en esta variable
+
+`image_backend="kitty"`
+
+### Escribes la ruta de tu imagen en esta variable
+
+`image_source="/ruta/de/tu/image/imagen.png"`
+
+### Le cambias el size a tu imagen en esta variable
+
+`image_sizee="300px"`
+
+### Guardas los cambios presionando ctrl + o
+
+`image_sizee="300px"`
+
+---
+
+## Abre el archivo de configuración de zsh
+
+```
+nano ~/.zshrc
+```
+`Pega esta function`
+
+```
+clear() {
+  command clear
+  neofetch
+}
+alias neofetch='neofetch'
+
+```
+---
+## Guardas los cambios 
+```
+source ~/.zshrc
+```
+## FIN
 
