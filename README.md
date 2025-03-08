@@ -1,6 +1,6 @@
 ## Personalización de la terminal de ArchLinux
 
-Este es el repositorio con instrucciones del video de YouTube: [🔧 Personaliza tu Terminal en Arch Linux como un PRO | Neofetch + Zsh + Oh My Zsh + Kitty 🎨](PENDIENTE) 
+Este es el repositorio con instrucciones del video de YouTube: [🔧 Personaliza tu Terminal en Arch Linux como un PRO | Neofetch + Zsh + Oh My Zsh + Kitty 🎨](https://youtu.be/3JB1OKLckMY?si=kD94awX555-Quv-i) 
 
 ## Apóyanos
 
